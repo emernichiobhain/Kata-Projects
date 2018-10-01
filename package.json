@@ -1,0 +1,21 @@
+{
+  "name": "salt-kata-vowel-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint ./**/*.js",
+    "test": "npx jest --config jest.config.json",
+    "watch": "npx jest --config jest.config.json --watchAll"
+  },
+  "keywords": [],
+  "author": "Jakob Leczinsky",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.24.0",
+    "jest": "^23.6.0"
+  }
+}
