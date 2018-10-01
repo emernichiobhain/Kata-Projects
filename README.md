@@ -3,7 +3,7 @@
 ## Vowels
 This kata is a simple game of splitting and mixing words by the first vowel.
 
-Some exapmles
+Some examples
 
 Word 1 | Word 2 | Result 1 | Result 2
 :---:  | :---:  | :---:    | :---:
@@ -13,7 +13,6 @@ black  | white  | blate    | whick
 mms    | sms    | mms      | sms
 
 ## Constraints
-There are some constraints to this kata.
 
 ### Interface
 The public function in the vowels module must be called `transform` and it should take _two parameters_ - one for each word that should be transformed.
