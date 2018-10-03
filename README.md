@@ -29,4 +29,4 @@ The module should report any errors (including bad input) to the client by throw
 ## Linter
 The linter rules in this project are based on Air Bnb's set of rules. 
 It is a very popular set of rules, but more stringent that what you have been using so far.
-__Don't not change these rules!__
+__Do not change these rules!__
