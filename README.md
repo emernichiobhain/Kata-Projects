@@ -1,4 +1,4 @@
-# &lt;\salt&gt;
+# &lt;/salt&gt;
 
 ## Vowels
 This kata is a simple game of splitting and mixing words by the first vowel.
