@@ -30,3 +30,8 @@ The module should report any errors (including bad input) to the client by throw
 The linter rules in this project are based on Air Bnb's set of rules. 
 It is a very popular set of rules, but more stringent that what you have been using so far.
 __Do not change these rules!__
+
+## Tests
+Since this is a TDD kata, you should write your own tests for the code.
+But the code will also be verified by an external test that is using the inteface defined in `index.js`.
+__Do not change this file!__
