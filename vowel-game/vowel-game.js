@@ -1,12 +1,10 @@
 function transform(x, y) {
-  if ((/[aeiou]/i).test(x) === false) {
+  if (x === '' || y === '') {
     return [x, y];
-  } else if ((/[aeiou]/i).test(y) === false) {
+  } if ((/[a-z]/i).test(x) === false || (/[a-z]/i).test(y) === false) {
+    throw new Error('Invalid input!');
+  } else if ((/[aeiou]/i).test(x) === false || (/[aeiou]/i).test(y) === false) {
     return [x, y];
-  } else if ((/[a-z]/i).test(x) === false) {
-    throw new Error('Invalid input!');
-  } else if ((/[a-z]/i).test(y) === false) {
-    throw new Error('Invalid input!');
   } else {
     const vowel = s => s.split(/([aeiou].*)/i);
     const headX = vowel(x)[0] + vowel(x)[1].slice(0, 1);

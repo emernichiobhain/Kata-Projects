@@ -19,6 +19,7 @@ describe('Vowel-Game Function Tests', () => {
     assert.deepEqual(vowelGame.transform('towel', 'car'), ['tor', 'cawel']);
     assert.deepEqual(vowelGame.transform('apple', 'melon'), ['alon', 'mepple']);
     assert.deepEqual(vowelGame.transform('black', 'white'), ['blate', 'whick']);
+    assert.deepEqual(vowelGame.transform('MOP', 'PUN'), ['mon', 'pup']);
   });
 
   test('Should not split and mix words without vowels', () => {
@@ -26,7 +27,9 @@ describe('Vowel-Game Function Tests', () => {
     assert.deepEqual(vowelGame.transform('mom', 'txt'), ['mom', 'txt']);
   });
 
-  test('Should reject spaces or special characters', () => {
-    expect(() => vowelGame.transform('&€=', '%#*')).toThrow(new Error);
+  test('Should not accept special characters or spaces', () => {
+    expect(() => vowelGame.transform('&€=', '%#*')).toThrow(Error);
+    expect(() => vowelGame.transform('123', '456')).toThrow(Error);
   });
+
 });

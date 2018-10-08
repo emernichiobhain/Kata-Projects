@@ -1,5 +1,5 @@
-const { stdin } = process.stdin;
-const { stdout } = process.stdout;
+const { stdin } = process;
+const { stdout } = process;
 const vowelGame = require('./vowel-game.js');
 
 const PROMPT = 'Please enter two words separated by a space: ';
