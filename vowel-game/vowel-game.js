@@ -1,7 +1,7 @@
 function transform(x, y) {
   if (x === '' || y === '') {
     return [x, y];
-  } if ((/[a-z]/i).test(x) === false || (/[a-z]/i).test(y) === false) {
+  } else if ((/[a-z]/i).test(x) === false || (/[a-z]/i).test(y) === false) {
     throw new Error('Invalid input!');
   } else if ((/[aeiou]/i).test(x) === false || (/[aeiou]/i).test(y) === false) {
     return [x, y];
